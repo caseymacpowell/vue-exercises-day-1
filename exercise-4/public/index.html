@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Exercise 4: Unlearn jQuery</title>
+	<script src="https://unpkg.com/vue"></script>
+</head>
+<body>
+	<style>
+		.hover-class {
+			color:red;
+		}
+	</style>
+	<div id="app">
+		<!-- when hoverData is true, apply the class "hover-class" which in turn will style the paragraph To create a real hover effect, we could add a v-on:mouseout="anotherFunction"-->
+		<p v-bind:class="{'hover-class': hoverData}" v-on:mouseenter="change">Check out this text! When you put your mouse over it, it changes color</p>
+	</div>
+
+	<script src="/main.js"></script>
+</body>
+</html>

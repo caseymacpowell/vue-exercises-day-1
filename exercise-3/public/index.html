@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Exercise 3: Color Mixer</title>
+	<script src="https://unpkg.com/vue"></script>
+</head>
+<body>
+	<style>
+		#app > div {
+			border: 1px solid black;
+			height:100px;
+			width:100px;
+		}
+	</style>
+	<div id="app">
+		Please input colors in RGB format. Each number needs to be between 0 and 225<br>
+		Color 1: 
+			R: <input v-model="colorOne.R">
+			G: <input v-model="colorOne.G">
+			B: <input v-model="colorOne.B"><br><br>
+		Color 2: 
+			R: <input v-model="colorTwo.R">
+			G: <input v-model="colorTwo.G">
+			B: <input v-model="colorTwo.B"><br><br>
+
+			Color 1: 
+				<div class="colorOne" v-bind:style="{'background-color': backgroundColorA}"></div>
+			Color 2:
+				<div class="colorTwo" v-bind:style="{'background-color': backgroundColorB}"></div>
+			Average Color:
+				<div class="average" v-bind:style="{'background-color': averageColor}"></div>
+		</div>
+
+
+	<script src="/main.js"></script>
+</body>
+</html>

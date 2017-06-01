@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Exercise 2: Live Calculator</title>
+	<script src="https://unpkg.com/vue"></script>
+</head>
+<body>
+
+<h2>Calculator</h2>
+<div id="app">
+	A: <input v-model="a">
+	B: <input v-model="b"><br>
+	A + B: <div v-if="add"><span>{{add}}</span></div><br>
+	A * B: <div v-if="multiply"><span>{{multiply}}</span></div>
+</div>
+
+
+<script src="/main.js"></script>
+</body>
+</html>

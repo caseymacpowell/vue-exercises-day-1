@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Exercise 1: Hello!</title>
+	<script src="https://unpkg.com/vue"></script>
+</head>
+<body>
+	<div id="app">
+		Username:
+		<input v-model="username">
+		<h1 v-if="username.length > 0">Hello, <span>{{username}}</span>!</h1>
+	</div>
+
+	<script src="/main.js"></script>
+</body>
+</html>
